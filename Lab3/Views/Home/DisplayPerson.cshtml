@@ -1,0 +1,57 @@
+﻿@model Lab3.Models.Person
+@{
+    Layout = "_Layout";
+   
+}
+
+<h3>Display Person Info</h3>
+<table>
+    <tr>
+        <td>
+            First Name:
+        </td>
+        <td>
+
+            @Model.firstName
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Last Name:
+        </td>
+        <td>
+
+            @Model.lastName
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Age:
+        </td>
+        <td>
+
+            @Model.age
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Email Address:
+        </td>
+        <td>
+            @Model.emailAddress
+        </td>
+    </tr>
+     <tr>
+        <td>
+            Person Discription:
+        </td>
+        <td>
+            @Model.personDiscription
+        </td>
+    </tr>
+    
+</table>
+<br />
+<br />
+<br />
+NOTE: This model data will not persist. This data would normally be stored in a database somewhere and then pulled again when needed.

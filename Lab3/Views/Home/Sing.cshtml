@@ -1,0 +1,35 @@
+﻿@using Microsoft.AspNetCore.Http;
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Sing";
+    var i = 0 ;
+}
+
+
+@for ( i = Int32.Parse(@ViewBag.numberOfBottels) ; i > 2; i--)
+{
+   
+    
+       <p>@i  Green bottles hanging on the wall,<br></p> 
+       <p>And if one green bottle should accidentally fall,<br></p> 
+       <hr>
+        
+    
+}
+
+ 
+<p>There are 2 bottles hanging on the wall.<br></p>
+</p>And if one bottle should accidentally fall,<br></p>
+<hr>
+<p>There'll be 1 bottle hanging on the wall.<br></p>
+</p>And if one bottle should accidentally fall,<br></p>
+<hr>
+<p>There is no bottle hanging on the wall.<br></p>
+
+<br />
+<br />
+<br />
+<button >
+      @Html.ActionLink("Play Again", "SongForm", "Home")
+    </button>

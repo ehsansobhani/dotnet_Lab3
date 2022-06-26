@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+     <meta name="viewport" content="width=device-width" />
+        <title>@ViewData["Title"]</title>
+       <link href="~/css/StyleSheet.css" rel="stylesheet" />
+        
+  
+    
+</head>
+<body>
+    <header>
+        <br>
+        Ehsan Sobhani 041016666 Welocome to my first try of MVC .net web application!
+        <br>
+        <br>
+        @Html.ActionLink("Home", "Index", "Home")<br>
+        @Html.ActionLink("Show the song!", "SongForm", "Home")<br>
+        @Html.ActionLink("Persons", "CreatePerson", "Home")</br>
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+    <footer>
+
+<hr>
+<pr>	
+<b>a.	Short description of what layout does</b>
+</pr>
+<blockquote>
+A Layout file allows us to reuse portions of View content (common elements) instead of implementing these visual elements on every page.
+</blockquote>
+<hr>
+
+<pr>	
+<b>b.	Why you put the files in those directories. E.g. CSS in directory x, and why. Layout in directory Y and why. Etc.</b>
+</pr>
+<blockquote>
+All static files such as image files, CSS files, and JavaScript files should be
+stored in a folder named wwwroot. The static files for an app can include CSS<br>
+libraries such as Bootstrap or JavaScript libraries such as jQuery. In addition,
+they can include custom CSS or JavaScript files that override the code in theselibraries.
+<br><br>
+By convention, the default layout for an ASP.NET Core app is named _Layout.cshtmland usually is placed under ‘Views/Shared’ folder<br>
+
+What are the main reasons behind using layout again?
+<ul>
+<li>Use common components</li>
+<li>Share directives</li>
+<li>Run common code before rendering pages or views</li>
+</ul>
+</blockquote>
+<hr>
+<pr>	
+<b>c.	You should not include the content of css or how you defined your css</b>
+</pr>
+<blockquote>
+A Layout file allows us to reuse portions of View content (common elements), then we should not put specific dtata for the specific page, it is the common data that 
+each page can use.
+</blockquote>
+
+
+
+
+        </footer>
+
+</body>
+</html>
